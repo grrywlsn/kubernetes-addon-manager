@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-FROM alpine
+FROM phusion/baseimage
 
 ADD kube-addons.sh /opt/
 ADD namespace.yaml /opt/
