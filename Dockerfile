@@ -12,10 +12,10 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-FROM phusion/baseimage
+FROM BASEIMAGE
 
 ADD kube-addons.sh /opt/
 ADD namespace.yaml /opt/
-ADD https://storage.googleapis.com/kubernetes-release/release/v1.8.0/bin/darwin/amd64/kubectl /usr/local/bin/
+ADD kubectl /usr/local/bin/
 
 CMD ["/opt/kube-addons.sh"]
